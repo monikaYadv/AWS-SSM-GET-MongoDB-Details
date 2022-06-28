@@ -68,7 +68,7 @@ def get_mongodb_version_details():
 
 if __name__ == '__main__':
 	"""
-	main module to execute the functionality to getting version details from ssm output.
+	main module to execute the functionality to parse SSM output and return mongoDB version details.
 
 	"""
 	get_mongodb_version_details()

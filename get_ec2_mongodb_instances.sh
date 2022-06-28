@@ -1,7 +1,7 @@
 curr_date_time=$(date +'%Y-%m-%d-%H-%M-%S')
 file_name="ssm_send_command_output_${curr_date_time}"
 sh_command_id=$(aws ssm send-command \
-    --targets "Key=tag:put tag key here,Values=put your tag value here" \
+    --targets "Key=tag:YOUR_TAG_KEY,Values=YOUR_TAG_VALUE" \
     --document-name "AWS-RunShellScript" \
     --comment "MongoDB find version script on Linux Instances" \
     --parameters '{"executionTimeout":["3600"],"commands":["mongod --version"]}' \
